@@ -5,4 +5,4 @@ UPDATE [dbo].[JAPAN_VER80] SET KUNI = '出羽国' WHERE(KEN = '秋田県' AND KU
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '下野国' WHERE KEN = '栃木県' 
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '上野国' WHERE KEN = '群馬県'
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '安房国' WHERE (KEN IN('千葉県') AND (SIKUCHOSON = '館山市' OR SIKUCHOSON = '鴨川市' OR SIKUCHOSON = '南房総市' OR SIKUCHOSON = '鋸南町'))
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '上総国' WHERE (KEN IN('千葉県') AND (SIKUCHOSON = '木更津市' OR SIKUCHOSON = '茂原市' OR SIKUCHOSON = '東金市' OR SIKUCHOSON = '勝浦市' OR SIKUCHOSON = '市原市' OR SIKUCHOSON = '君津市' OR SIKUCHOSON = '富津市' OR SIKUCHOSON = '袖ヶ浦市' OR SIKUCHOSON = '山武市' OR SIKUCHOSON = 'いすみ市' OR SIKUCHOSON = '大綱白里市' OR SIKUCHOSON = '芝山市' OR SIKUCHOSON = '一宮町' OR SIKUCHOSON = '睦沢町' OR SIKUCHOSON = '長生村' OR SIKUCHOSON = '白子町'　OR SIKUCHOSON = '長柄町' OR SIKUCHOSON = '長南町' OR SIKUCHOSON = '大多喜町' OR SIKUCHOSON = '御宿町'))
+UPDATE [dbo].[JAPAN_VER80] SET KUNI = '上総国' WHERE (KEN IN('千葉県') AND SIKUCHOSON IN ('木更津市','茂原市','東金市','勝浦市','市原市','君津市','富津市','袖ケ浦市','山武市','いすみ市','大綱白里市','芝山市','一宮町','睦沢町','長生村','白子町','長柄町','長南町','大多喜町','御宿町')
