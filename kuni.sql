@@ -1,7 +1,7 @@
 ALTER TABLE [dbo].[JAPAN_VER80] ADD KUNI VARCHAR(30)
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '蝦夷国' WHERE KEN = '北海道'
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '陸奥国' WHERE KEN = '青森県' OR KEN = '岩手県'　OR KEN = '宮城県'　OR KEN = '福島県' OR  (KEN IN('秋田県') AND (SIKUCHOSON = '小坂町' OR SIKUCHOSON = '鹿角町'))
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '出羽国' WHERE(KEN = '秋田県' AND KUNI IS NULL) OR KEN = '山形県'
+UPDATE [dbo].[JAPAN_VER80] SET KUNI = '出羽国' WHERE (KEN = '秋田県' AND KUNI IS NULL) OR KEN = '山形県'
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '下野国' WHERE KEN = '栃木県' 
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '上野国' WHERE KEN = '群馬県'
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '安房国' WHERE (KEN IN('千葉県') AND (SIKUCHOSON = '館山市' OR SIKUCHOSON = '鴨川市' OR SIKUCHOSON = '南房総市' OR SIKUCHOSON = '鋸南町'))
