@@ -22,13 +22,14 @@ UPDATE [dbo].[JAPAN_VER80] SET KUNI = '越後国' WHERE KEN = '新潟県' AND KU
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '伊豆国' WHERE KEN = '静岡県' AND SIKUCHOSON IN ('熱海市','三島市','伊東市','下田市','伊豆市','伊豆の国市','東伊豆町','河津町','南伊豆町','松崎町','西伊豆町','函南町')
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '駿河国' WHERE KEN = '静岡県' AND SIKUCHOSON IN ('葵区','駿河区','清水区','富士宮市','富士市','焼津市','藤枝市','御殿場市','裾野市','清水町','長泉町','小山町')
 UPDATE [dbo].[JAPAN_VER80] SET KUNI = '遠江国' WHERE KEN = '静岡県' AND KUNI IS NULL
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '神奈川県' AND　SIKUCHOSON = '港南区'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '千葉県' AND　SIKUCHOSON = '横芝光町'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '千葉県' AND　SIKUCHOSON = '緑区'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '埼玉県' AND　SIKUCHOSON = '久喜市'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '埼玉県' AND　SIKUCHOSON = '春日部市'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '茨城県' AND　SIKUCHOSON = '下妻市'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '茨城県' AND　SIKUCHOSON = '稲敷市'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '茨城県' AND　SIKUCHOSON = 'つくばみらい市'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '茨城県' AND　SIKUCHOSON = '河内町'
-UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE KEN = '静岡県' AND　SIKUCHOSON = '沼津市'
+UPDATE [dbo].[JAPAN_VER80] SET KUNI = '画定不能' WHERE (KEN = '神奈川県' AND　SIKUCHOSON = '港南区') 
+OR (KEN = '千葉県' AND　SIKUCHOSON = '横芝光町') 
+OR (KEN = '千葉県' AND　SIKUCHOSON = '緑区')
+OR (KEN = '千葉県' AND　SIKUCHOSON = '緑区')
+OR (KEN = '埼玉県' AND　SIKUCHOSON = '久喜市')
+OR (KEN = '埼玉県' AND　SIKUCHOSON = '春日部市')
+OR (KEN = '茨城県' AND　SIKUCHOSON = '下妻市')
+OR (KEN = '茨城県' AND　SIKUCHOSON = '稲敷市')
+OR (KEN = '茨城県' AND　SIKUCHOSON = 'つくばみらい市')
+OR (KEN = '茨城県' AND　SIKUCHOSON = '河内町')
+OR (KEN = '静岡県' AND　SIKUCHOSON = '沼津市')
